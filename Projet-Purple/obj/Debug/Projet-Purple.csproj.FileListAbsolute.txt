@@ -1,0 +1,11 @@
+C:\Users\Alex\source\repos\Projet-Purple\Projet-Purple\obj\Debug\Projet-Purple.csproj.AssemblyReference.cache
+C:\Users\Alex\source\repos\Projet-Purple\Projet-Purple\obj\Debug\Projet-Purple.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alex\source\repos\Projet-Purple\Projet-Purple\obj\Debug\Projet_Purple.Form1.resources
+C:\Users\Alex\source\repos\Projet-Purple\Projet-Purple\obj\Debug\Projet_Purple.Properties.Resources.resources
+C:\Users\Alex\source\repos\Projet-Purple\Projet-Purple\obj\Debug\Projet-Purple.csproj.GenerateResource.cache
+C:\Users\Alex\source\repos\Projet-Purple\Projet-Purple\obj\Debug\Projet-Purple.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\Projet-Purple\Projet-Purple\bin\Debug\Projet-Purple.exe.config
+C:\Users\Alex\source\repos\Projet-Purple\Projet-Purple\bin\Debug\Projet-Purple.exe
+C:\Users\Alex\source\repos\Projet-Purple\Projet-Purple\bin\Debug\Projet-Purple.pdb
+C:\Users\Alex\source\repos\Projet-Purple\Projet-Purple\obj\Debug\Projet-Purple.exe
+C:\Users\Alex\source\repos\Projet-Purple\Projet-Purple\obj\Debug\Projet-Purple.pdb
