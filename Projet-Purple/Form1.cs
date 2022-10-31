@@ -13,6 +13,7 @@ namespace Projet_Purple
 {
     public partial class Form1 : Form
     {
+        //initialisations des variables
         bool goLeft, goRight, jumping, IsGameOver;
         bool platformstar_move = true;
         bool Hard = false;
@@ -37,16 +38,21 @@ namespace Projet_Purple
 
         private void Main_Game(object sender, EventArgs e)
         {
+            // calcul du temps et affichage en temps réel
             time = time + 0.03;
             label4.Text = "Temps : " + Math.Round(time, 1).ToString() + " s";
 
+            // initialisation du perso de base
             if (characterSkin == 0)
             {
                 player.BackColor = Color.Transparent;
                 playerSpeed = 15;
             }
+            
+            // permet de sauter selon la vitesse de saut
             player.Top += jumpSpeed;
 
+            //conditions pour les déplacments
             if (goLeft == true)
             {
                 player.Left -= playerSpeed;
@@ -71,6 +77,7 @@ namespace Projet_Purple
                 jumpSpeed = 12;
             }
 
+            // deéplacments des ennemis terrestres
             enemy2.Left += enemySpeed;
             if (enemy2.Left < 345)
             {
@@ -89,6 +96,7 @@ namespace Projet_Purple
             {
                 enemySpeed = -enemySpeed;
             }
+            // déplacments des ennemis volants
             fly1.Left += flySpeed;
             fly2.Left += flySpeed;
             if (fly1.Left == LeftCond || fly1.Right == RightCond)
@@ -132,6 +140,7 @@ namespace Projet_Purple
 
             foreach (Control x in this.Controls)
             {
+                // gestions des collisions
                 if (x is PictureBox)
                 {
                     if ((string)x.Tag == "platform")
@@ -156,8 +165,6 @@ namespace Projet_Purple
                             }
                             else
                             {
-                                Console.WriteLine(x.Top);
-                                Console.WriteLine(player.Bottom);
                                 gametimer.Stop();
                                 IsGameOver = true;
                                 label1.Text = "Tu as perdu ! Appuie sur Entrée pour rejouer...";
@@ -210,6 +217,7 @@ namespace Projet_Purple
 
         private void KeyIsDown(object sender, KeyEventArgs e)
         {
+            // assignements des touches
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Q)
             {
                 goLeft = true;
@@ -247,7 +255,7 @@ namespace Projet_Purple
 
         private void KeyIsUp(object sender, KeyEventArgs e)
         {
-
+            // Reset des actions de certaines touches
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Q)
             {
                 goLeft = false;
@@ -322,6 +330,7 @@ namespace Projet_Purple
 
         private void ResetGame()
         {
+            // reset des valeurs pour rejouer
             jumping = false;
             goLeft = false;
             goRight = false;
